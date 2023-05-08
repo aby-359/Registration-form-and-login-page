@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <style>
+            body {
+                background-image: url('image.png');
+                background-size: cover;
+            }
+
+            h1 {
+                text-align: center;
+                font-family: cursive;
+                margin-top: 50px;
+                font-size: 48px;
+                color: #fff;
+                text-shadow: 2px 2px 4px #000;
+                animation: fadein 2s;
+            }
+
+            form {
+                text-align: center;
+                margin-top: 50px;
+                animation: slidein 2s;
+            }
+
+            input[type="text"],
+            input[type="password"] {
+                padding: 10px;
+                margin: 10px;
+                border: none;
+                border-radius: 5px;
+                box-shadow: 2px 2px 4px #000;
+                font-size: 16px;
+                font-family: "Arial", sans-serif;
+                animation: slidein 2s;
+            }
+
+            input[type="submit"] {
+                background-color: #1abc9c;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                font-size: 18px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: background-color 0.3s ease-in-out;
+                animation: slidein 2s;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #16a085;
+            }
+
+            @keyframes slidein {
+                from {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+            }
+
+            @keyframes fadein {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            input[type="text"]:focus,
+            input[type="password"]:focus {
+                outline: none;
+                border: 2px solid #1abc9c;
+                box-shadow: 2px 2px 4px #1abc9c;
+                animation: bordercolor 0.3s ease-in-out;
+            }
+
+            /* Additional animations */
+            input[type="submit"] {
+                position: relative;
+                animation-name: buttonbounce;
+                animation-duration: 0.5s;
+                animation-timing-function: ease-out;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes buttonbounce {
+                0% {
+                    top: 0;
+                }
+                30% {
+                    top: -10px;
+                }
+                60% {
+                    top: 0;
+                }
+                80% {
+                    top: -5px;
+                }
+                100% {
+                    top: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Login</h1>
+        <form method="post">
+            <input type="text" name="username" placeholder="Enter your username"><br>
+            <input type="password" name="pass" placeholder="Enter your password"><br>
+            <input type="password" name="pass" placeholder="Confirm password"><br>
+
+            <button type="submit">Login</button> 
+        </form>
+    </body>
+</html>

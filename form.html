@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+            /* Styles for the page header */
+            header {
+                background-color: #1abc9c;
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+                font-size: 36px;
+                font-family:'Courier New', Courier, monospace;
+                text-shadow: 2px 2px 4px #000;
+            }
+
+            /* Styles for the form container */
+            form {
+                max-width: 500px;
+                margin: 20px auto;
+                padding: 10px;
+                background-color: #fff;
+                border-radius: 5px;
+                box-shadow: 2px 2px 4px #000;
+                font-family:'Courier New', Courier, monospace;
+                animation: fadein 2s;
+            }
+
+            /* Styles for the form labels */
+            label {
+                display: inline-block;
+                margin-bottom: 5px;
+                font-size: 18px;
+                font-weight: bold;
+                animation: slidein 2s;
+            }
+
+            /* Styles for the form inputs */
+            input[type="text"], input[type="email"], input[type="password"] {
+                width: 95%;
+                padding: 11px;
+                margin-bottom: 20px;
+                border: none;
+                border-radius: 25px;
+                box-shadow: 2px 2px 4px #000;
+                font-size: 16px;
+                font-family:'Courier New', Courier, monospace;
+                animation: slidein 2s;
+            }
+
+            /* Styles for the form radio buttons and checkboxes */
+            input[type="radio"], input[type="checkbox"] {
+                margin-left: 5px;
+                animation: slidein 2s;
+            }
+
+            /* Styles for the submit button */
+            input[type="submit"] {
+                background-color: #1abc9c;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                font-size: 18px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: background-color 0.3s ease-in-out;
+                animation: slidein 2s;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #16a085;
+            }
+
+            /* Styles for error messages */
+            .error {
+                color: #ff0000;
+                font-size: 14px;
+                margin-top: 5px;
+                animation: slidein 2s;
+            }
+            h1 {
+                text-align: center;
+                font-family: cursive;
+                margin-top: 50px;
+                font-size: 48px;
+                color: #fff;
+                text-shadow: 2px 2px 4px #000;
+                animation: fadein 2s;
+            }
+
+            /* Animations */
+            @keyframes slidein {
+              from {
+                opacity: 0;
+                transform: translateY(-20px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0px);
+              }
+            }
+
+            @keyframes fadein {
+              from {
+                opacity: 0;
+              }
+              to {
+                opacity: 1;
+              }
+            }
+        </style>
+    </head>
+    <body style="background: url('image2.png')">
+        <h1 style="text-align: center;color:#6cff10;font-family:'Courier New', Courier, monospace;">Registration Form</h1>
+        <form   method="post" action="login.html">
+            
+            <label>Username:</label>
+            <input type="text" name="Username"><br>
+            <label>Email  address:</label>
+            <input type="email" name="Email"><br>
+            <label>Mobile number:</label>
+            <input type="text" name="Phone"><br>
+            <label>Gender:</label>
+            <input type="radio" value="Male" name="Gender">Male
+            <input type="radio" value="female" name="Gender">Female<br>
+            <br><label>Password</label>
+            <input type="password" name="pass"><br>
+            <label>Confirm Password</label>
+            <input type="password" name="pass"><br>
+            <br><label>Please Tick The Declaration Form :</label>
+            <br><label>I Declare All The Information Given Are Correct</label>
+            <input type="checkbox" name="declare"><br>
+            <br><input type="submit">
+            
+            
+
+        </form>
+
+
+
+
+
+
+    </body>
+</html>
